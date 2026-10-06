@@ -63,16 +63,22 @@ Note: I/O will be automatically handled.
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-06T07:55:25.940Z  
+**Submitted:** 2026-10-06T10:21:30.203Z  
 
 ```c
 #include <stdio.h>
 
 int max_of_four(int a, int b, int c, int d) {
     int max = a;
-    if (b > max) max = b;
-    if (c > max) max = c;
-    if (d > max) max = d;
+    if (b > max) {
+        max = b;
+    }
+    if (c > max) {
+        max = c;
+    }
+    if (d > max) {
+        max = d;
+    }
     return max;
 }
 
