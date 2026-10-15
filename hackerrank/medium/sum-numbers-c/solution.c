@@ -1,22 +1,16 @@
+
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 
 int main()
 {
-    int int1, int2;
-    float float1, float2;
+    int a, b;
+    float x, y;
 
-    // Read two integers and two float numbers
-    scanf("%d %d", &int1, &int2);
-    scanf("%f %f", &float1, &float2);
+    scanf("%d %d", &a, &b);
+    scanf("%f %f", &x, &y);
 
-    // Print integer sum and difference
-    printf("%d %d\n", int1 + int2, int1 - int2);
-
-    // Print float sum and difference rounded to 1 decimal place
-    printf("%.1f %.1f\n", float1 + float2, float1 - float2);
+    printf("%d %d\n", a + b, a - b);
+    printf("%.1f %.1f\n", x + y, x - y);
 
     return 0;
 }
